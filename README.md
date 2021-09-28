@@ -43,3 +43,11 @@ simplest-query   *         192.168.122.34   80        3m
 ```
 
 In this example, the Jaeger UI is available at http://192.168.122.34.
+
+Alternatively, run the following command to check if its working:
+
+```
+kubectl port-forward service/simplest-query 16686:16686 -n observability
+```
+
+In this example, the Jaeger UI is available at http://localhost:16686
